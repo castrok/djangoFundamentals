@@ -1,2 +1,0 @@
-django-admin startproject controle_gastos .
-python manage.py startapp contas 

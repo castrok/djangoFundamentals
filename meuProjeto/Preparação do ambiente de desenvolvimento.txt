@@ -1,0 +1,8 @@
+python -m venv venv
+pip install django
+django-admin startproject controle_gastos .
+python manage.py startapp contas
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+python manage.py createsuperuser
