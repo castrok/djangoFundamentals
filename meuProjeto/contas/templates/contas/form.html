@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Salvar</button>
+
+    {% if transacao %}
+    <a href="{% url 'url_delete' transacao.id %}"> Deletar </a>
+    {% endif %}
+</form>
+
+</body>
+</html>
